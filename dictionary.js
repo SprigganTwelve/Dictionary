@@ -124,7 +124,7 @@ function createSectionHtml(word, phonetic, meaning) {
   <section>
     <div class="word-attributes">
       <h3>${meaning.partOfSpeech} ${phonetic || ""}</h3>
-      <button onclick="playAudio()"><span class="material-symbols-outlined"> sound_sampler </span></button>
+      <button class="audio" onclick="playAudio()"><span class="material-symbols-outlined"> sound_sampler </span></button>
     </div>
     <h2>${word}</h2>
     ${meaning.synonyms.length === 0 ? "" : `<h2>synonyms : ${meaning.synonyms.join(", ")}</h2>`}

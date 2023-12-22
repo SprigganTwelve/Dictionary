@@ -109,3 +109,9 @@ p + p {
 
   color: whitesmoke;
 }
+.audio {
+  background: black;
+  color: azure;
+  border: none;
+  outline: none;
+}
