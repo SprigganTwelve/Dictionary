@@ -32,6 +32,9 @@ load.addEventListener("click", function () {
         sliderInnerHtml += sectionHtml;
       });
       slider.innerHTML = sliderInnerHtml;
+      next.style.display = "block";
+      prev.style.display = "block";
+      prev.style.color = "black";
 
       var sections = document.querySelectorAll("section");
       console.log(sections);
