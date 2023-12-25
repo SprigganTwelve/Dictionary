@@ -47,8 +47,7 @@ load.addEventListener("click", function () {
 
         if (sections.length - 1 === index) {
           next.style.color = "black";
-        }
-        if (index !== 0) {
+        } else if (index !== 0) {
           prev.style.color = "white";
         }
       });
@@ -59,8 +58,7 @@ load.addEventListener("click", function () {
 
         if (index == 0) {
           prev.style.color = "black";
-        }
-        if (index !== sections.length) {
+        } else if (index !== sections.length) {
           next.style.color = "white";
         }
       });
