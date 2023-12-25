@@ -99,14 +99,14 @@ p + p {
   background: transparent;
   border: none;
   outline: none;
-
+  display: none;
   color: whitesmoke;
 }
 #next {
   background: transparent;
   border: none;
   outline: none;
-
+  display: none;
   color: whitesmoke;
 }
 .audio {
@@ -114,4 +114,8 @@ p + p {
   color: azure;
   border: none;
   outline: none;
+}
+body {
+  background: url(gojo-extension-du-territoire.jpg);
+  background-size: cover;
 }

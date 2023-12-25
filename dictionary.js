@@ -44,11 +44,25 @@ load.addEventListener("click", function () {
       next.addEventListener("click", function () {
         index = index < sections.length - 1 ? index + 1 : sections.length - 1;
         slider.style.transform = `translate(${-translateValue * index}%)`;
+
+        if (sections.length - 1 === index) {
+          next.style.color = "black";
+        }
+        if (index !== 0) {
+          prev.style.color = "white";
+        }
       });
 
       prev.addEventListener("click", function () {
         index = index > 0 ? index - 1 : 0;
         slider.style.transform = `translate(${-translateValue * index}%)`;
+
+        if (index == 0) {
+          prev.style.color = "black";
+        }
+        if (index !== sections.length) {
+          next.style.color = "white";
+        }
       });
 
       console.log(result);
